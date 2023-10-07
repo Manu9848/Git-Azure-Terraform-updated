@@ -5,8 +5,8 @@ resource "azurerm_network_security_group" "webservers-nsg" {
   tags = {
     CostCenter  = var.costcenter
     Environment = var.env
-    Tag1        = "KGF"
-    Tag2        = "Vikram"
-    Tag3        = "Dune"
+    Tag1        = "KGF001"
+    Tag2        = "Vikram001"
+    Tag3        = "Dune001"
   }
 }
