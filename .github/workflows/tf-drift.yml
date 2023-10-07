@@ -20,9 +20,8 @@ env:
   ACTIONS_STEP_DEBUG: true
 
 jobs:
-
-  secret_scanning:
-      name: "secret-scanning-job"
+  secret-scanning:
+    name: "secret-scanning-job"
     #runs-on: ubuntu-latest
     runs-on: terraform
 
@@ -35,7 +34,6 @@ jobs:
       # Checkout the repository to the GitHub Actions runner
       - name: Checkout
         uses: actions/checkout@v3
-
 
   terraform:
     name: "Terraform-job"
