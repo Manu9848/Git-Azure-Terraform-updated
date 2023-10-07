@@ -5,5 +5,8 @@ resource "azurerm_network_security_group" "webservers-nsg" {
     tags = {
     CostCenter  = var.costcenter
     Environment = var.env
+    Tag1 = "India"
+    Tag2 = "USA"
+    Tag3 = "UK"
   }
 }
