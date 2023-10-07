@@ -9,21 +9,21 @@ resource "azurerm_subnet" "web-servers" {
   name                 = "${var.rg_name}-vnet1-webservers"
   resource_group_name  = azurerm_resource_group.app10rg.name
   virtual_network_name = azurerm_virtual_network.vnet1.name
-  address_prefixes     = [var.vnet_cidr_webServers]
+  address_prefixes     = [var.vnet_cidr_webservers]
 }
 
 resource "azurerm_subnet" "app-servers" {
   name                 = "${var.rg_name}-vnet1-appservers"
   resource_group_name  = azurerm_resource_group.app10rg.name
   virtual_network_name = azurerm_virtual_network.vnet1.name
-  address_prefixes     = [var.vnet_cidr_appServers]
+  address_prefixes     = [var.vnet_cidr_appservers]
 }
 
 resource "azurerm_subnet" "db-servers" {
   name                 = "${var.rg_name}-vnet1-dbservers"
   resource_group_name  = azurerm_resource_group.app10rg.name
   virtual_network_name = azurerm_virtual_network.vnet1.name
-  address_prefixes     = [var.vnet_cidr_dbServers]
+  address_prefixes     = [var.vnet_cidr_dbservers]
 }
 
 resource "azurerm_subnet" "fwsubnet" {
