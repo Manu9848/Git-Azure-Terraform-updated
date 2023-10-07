@@ -2,7 +2,7 @@ name: "Terraform apply"
 
 on:
   workflow_run:
-    workflows: ["tf-drift.yml"]
+    workflows: ["Terraform Validate & Dryrun"]
     branches: [dev]
     types:
       - completed
