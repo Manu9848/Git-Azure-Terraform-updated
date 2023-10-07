@@ -20,8 +20,26 @@ env:
   ACTIONS_STEP_DEBUG: true
 
 jobs:
+
+
+  secret-scanning:
+      name: "secret-scanning-job"
+    #runs-on: ubuntu-latest
+    runs-on: terraform
+
+    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      # Checkout the repository to the GitHub Actions runner
+      - name: Checkout
+        uses: actions/checkout@v3
+
+
   terraform:
-    name: "Terraform"
+    name: "Terraform-job"
     #runs-on: ubuntu-latest
     runs-on: terraform
 
