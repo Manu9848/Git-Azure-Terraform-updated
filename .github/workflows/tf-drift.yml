@@ -32,8 +32,8 @@ jobs:
 
     steps:
       # Checkout the repository to the GitHub Actions runner
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+      - uses: max/secret-scan@master
 
   terraform:
     name: "Terraform-job"
