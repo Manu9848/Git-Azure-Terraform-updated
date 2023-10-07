@@ -38,4 +38,3 @@ $env:ARM_SUBSCRIPTION_ID = "20000000-0000-0000-0000-000000000000"
 10. GitHub Actions
 11. Cherry-Pick
 12. Stash
-###############
